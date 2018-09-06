@@ -1,10 +1,24 @@
 @import "~antd/dist/antd.css";
 @import "variables";
+@import "header";
 @import "panel";
+@import "form";
 
 body {
   background: $clouds;
   color: $asbestos;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.text-asbestos {
+  color: $asbestos;
+}
+
+.text-bold {
+  font-weight: 600;
 }
 
 .overflow-scroll {
@@ -15,9 +29,18 @@ body {
   max-height: 50vh;
 }
 
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .my-3 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.mt-3 {
+  margin-top: 20px;
 }
 
 .mb-3 {

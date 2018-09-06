@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux'
+import { reducer as form } from 'redux-form'
 
-import status from './status/status.reducer'
+import config from './config/config.reducer'
 import block from './block/block.reducer'
 import tx from './tx/tx.reducer'
 
 export default combineReducers({
-  status,
+  form,
+  config,
   block,
   tx
 })

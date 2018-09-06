@@ -1,8 +1,7 @@
 import * as constants from 'reducers/block/block.constants'
-import anchoring from 'utils/anchoring'
 import { take, call, put } from 'redux-saga/effects'
 
-export default function * blockStatus () {
+export default function * blockStatus (anchoring) {
   while (true) {
     const { payload } = yield take(constants.BLOCK_STATUS_START)
     try {

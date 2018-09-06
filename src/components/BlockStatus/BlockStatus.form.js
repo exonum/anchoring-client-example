@@ -26,6 +26,7 @@ class BlockStatusForm extends Component {
       <Spin spinning={loading}>
         <form onKeyDown={this.onKeyDown}>
           <InputNumber
+            disabled={loading}
             min={0}
             placeholder='block height'
             value={this.state.block}

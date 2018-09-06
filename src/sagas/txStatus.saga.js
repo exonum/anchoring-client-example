@@ -1,8 +1,7 @@
 import * as constants from 'reducers/tx/tx.constants'
-import anchoring from 'utils/anchoring'
 import { take, call, put } from 'redux-saga/effects'
 
-export default function * txStatus () {
+export default function * txStatus (anchoring) {
   while (true) {
     const { payload } = yield take(constants.TX_STATUS_START)
     try {

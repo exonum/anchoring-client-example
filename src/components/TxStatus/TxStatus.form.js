@@ -26,7 +26,11 @@ class TxStatusForm extends Component {
     return (
       <Spin spinning={loading}>
         <form onKeyDown={this.onKeyDown}>
-          <Input placeholder='Tx hash' value={this.state.tx} onChange={e => this.setState({ tx: e.target.value })} />
+          <Input
+            disabled={loading}
+            placeholder='Tx hash'
+            value={this.state.tx}
+            onChange={e => this.setState({ tx: e.target.value })} />
         </form>
       </Spin>
     )

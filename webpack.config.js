@@ -18,7 +18,7 @@ const extractSass = new ExtractTextPlugin({
 
 const config = {
   devtool: prod ? false : 'cheap-eval-source-map',
-  entry: `${entry}index.js`,
+  entry: ['@babel/polyfill', `${entry}index.js`],
   output: {
     path: path.join(__dirname, output),
     publicPath: '/',
