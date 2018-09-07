@@ -3,6 +3,7 @@
 @import "header";
 @import "panel";
 @import "form";
+@import "list";
 
 body {
   background: $clouds;
@@ -21,6 +22,12 @@ body {
   font-weight: 600;
 }
 
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .overflow-scroll {
   overflow: scroll;
 }
@@ -34,13 +41,26 @@ body {
   margin-bottom: 5px;
 }
 
+.my-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .my-3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+.mt-1 {
+  margin-top: 5px;
+}
+
 .mt-3 {
   margin-top: 20px;
+}
+
+.mr-3 {
+  margin-right: 20px;
 }
 
 .mb-3 {

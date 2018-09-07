@@ -1,0 +1,1 @@
+export const STATUS_SET_TXS = 'STATUS_SET_TXS'

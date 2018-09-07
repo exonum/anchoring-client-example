@@ -59,6 +59,7 @@ const config = {
     }),
     extractSass,
     new CopyWebpackPlugin([{ from: 'src/dist/*.css', to: 'css' }]),
+    new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }]),
     new HtmlWebpackPlugin({
       template: `${entry}index.html`,
       filename: `index.html`,

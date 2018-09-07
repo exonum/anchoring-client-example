@@ -5,19 +5,19 @@ import Header from '../Header/Header'
 import BlockStatus from '../BlockStatus/BlockStatus'
 import TxStatus from '../TxStatus/TxStatus'
 import ConfigModal from '../ConfigModal/ConfigModal'
+import AnchoringStatus from '../AnchoringStatus/AnchoringStatus'
 
-const Main = () =>
+export default () =>
   (<div>
     <Header />
     <Row>
       <Col span={12}>
-        <BlockStatus />
+        <AnchoringStatus />
       </Col>
       <Col span={12}>
+        <BlockStatus />
         <TxStatus />
       </Col>
     </Row>
     <ConfigModal />
   </div>)
-
-export default Main

@@ -6,7 +6,10 @@ class Header extends Component {
   render () {
     return (
       <header>
-        <h1 className='no-margin text-bold text-asbestos'>Exonum anchoring example</h1>
+        <h1 className='no-margin text-bold text-asbestos'>
+          <img src='/assets/img/logo.png' className='logo mr-3' />
+          Exonum anchoring example
+        </h1>
         <div className='right'><Button shape='circle' icon='setting' onClick={e => setShowModal(true)} /></div>
       </header>
     )
