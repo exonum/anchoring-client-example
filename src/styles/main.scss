@@ -1,5 +1,6 @@
 @import "~antd/dist/antd.css";
 @import "variables";
+@import "mixins";
 @import "header";
 @import "panel";
 @import "form";
@@ -12,6 +13,14 @@ body {
 
 .no-margin {
   margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .text-asbestos {
@@ -33,7 +42,7 @@ body {
 }
 
 .max-height-50 {
-  max-height: 50vh;
+  max-height: calc(50vh - 51px);
 }
 
 .my-1 {

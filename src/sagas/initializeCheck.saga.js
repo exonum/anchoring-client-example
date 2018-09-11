@@ -1,5 +1,8 @@
 import * as constants from 'reducers/config/config.constants'
-import { take, spawn, select, call } from 'redux-saga/effects'
+import * as blockConstants from 'reducers/block/block.constants'
+import * as statusConstants from 'reducers/status/status.constants'
+import * as txConstants from 'reducers/tx/tx.constants'
+import { take, spawn, select, call, put } from 'redux-saga/effects'
 import exonumAnchoring from './exonumAnchoring.saga'
 import blockStatus from './blockStatus.saga'
 import txStatus from './txStatus.saga'
@@ -14,6 +17,9 @@ export default function * initializeCheck () {
     if (blockStatusSpawn) blockStatusSpawn.cancel()
     if (txStatusSpawn) txStatusSpawn.cancel()
     if (anchoring) anchoring.syncStop()
+    yield put({ type: blockConstants.BLOCK_CLEAN })
+    yield put({ type: statusConstants.STATUS_CLEAN })
+    yield put({ type: txConstants.TX_CLEAN })
 
     const config = {
       driver: new exonum.drivers.Smartbit({

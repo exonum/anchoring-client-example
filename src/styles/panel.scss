@@ -1,8 +1,12 @@
 .panel {
   margin: 15px;
+  margin-bottom: 0;
   padding: 10px 15px;
   background: #fff;
   border-radius: 3px;
+  -webkit-box-shadow: 0 5px 27px -12px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 5px 27px -12px rgba(0, 0, 0, 0.33);
+  box-shadow: 0 5px 27px -12px rgba(0, 0, 0, 0.33);
 
   &.clean {
     background: transparent;

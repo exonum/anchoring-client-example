@@ -9,6 +9,8 @@ export default function config (state = Model, { type, payload }) {
       return state.merge({ configModal: payload })
     case constants.CONFIG_SET_SYNC_START:
       return state.merge({ syncStarted: payload })
+    case constants.CONFIG_SET_LOADED:
+      return state.merge({ loaded: payload })
     default:
       return state
   }

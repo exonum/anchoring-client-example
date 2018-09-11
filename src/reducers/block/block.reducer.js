@@ -9,6 +9,8 @@ export default function block (state = Model, { type, payload }) {
       return state.merge({ loading: false, status: payload })
     case constants.BLOCK_STATUS_ERRORED:
       return state.merge({ loading: false, status: null, error: payload })
+    case constants.BLOCK_CLEAN:
+      return Model
     default:
       return state
   }

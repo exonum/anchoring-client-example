@@ -9,6 +9,8 @@ export default function tx (state = Model, { type, payload }) {
       return state.merge({ loading: false, status: payload, error: null })
     case constants.TX_STATUS_ERRORED:
       return state.merge({ loading: false, status: null, error: payload })
+    case constants.TX_CLEAN:
+      return Model
     default:
       return state
   }

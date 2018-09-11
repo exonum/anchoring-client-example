@@ -1,5 +1,4 @@
 import React from 'react'
-import { hot } from 'react-hot-loader'
 import Main from './components/Main/Main'
 import { Provider } from 'react-redux'
 import { store } from './store'
@@ -11,4 +10,4 @@ const App = () =>
   (<Provider store={store}>
     <Main />
   </Provider>)
-export default hot(module)(App)
+export default App

@@ -1,1 +1,2 @@
 export const STATUS_SET_TXS = 'STATUS_SET_TXS'
+export const STATUS_CLEAN = 'STATUS_CLEAN'

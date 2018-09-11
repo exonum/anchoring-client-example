@@ -27,8 +27,9 @@ class BlockStatusForm extends Component {
         <form onKeyDown={this.onKeyDown}>
           <InputNumber
             disabled={loading}
+            style={{ width: '100%' }}
             min={0}
-            placeholder='block height'
+            placeholder='Block height'
             value={this.state.block}
             onChange={e => this.setState({ block: e })} />
         </form>
