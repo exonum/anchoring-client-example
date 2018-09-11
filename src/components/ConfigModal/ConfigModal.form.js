@@ -13,6 +13,10 @@ const ConfigForm = props => {
   const networkOptions = [{ name: 'Mainnet', value: 'mainnet' }, { name: 'Testnet', value: 'testnet' }]
   return (
     <form onSubmit={handleSubmit}>
+      <div className='mb-3'>
+        To begin, you need to have configured and started Exonum with anchoring service.
+        Then you should provide IP address of your Exonum nodes in the field below.
+      </div>
       <Row className='my-1'>
         <Col span={6}>
           <label>Network</label>
